@@ -44,7 +44,12 @@
     height: 200px; /* Should be removed. Only for demonstration */
   }
   /* Style the footer */
-  .footer {
-    background-color: #f1f1f1;
+  .page-footer,font-small,blue,pt-4 {
+    background-color: #919191;
+    font-family: Helvetica;
+    color: #fff;
     padding: 10px;
+  }
+  .footer-copyright,text-center,py-3 {
+    background-color: #919191;
   }
