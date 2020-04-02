@@ -48,3 +48,10 @@
     background-color: #f1f1f1;
     padding: 10px;
   }
+  div#general {
+    margin: auto;
+    margin-top: 50px;
+    width: 1600px;
+    height: 900px;
+    background-color: #fff;
+  }
