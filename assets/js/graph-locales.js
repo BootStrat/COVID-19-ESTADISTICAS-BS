@@ -17,7 +17,7 @@ google.setOnLoadCallback(Grafico1);
     }
 
     var data = response.getDataTable();
-    var chart = new google.visualization.LineChart(document.getElementById('grafico'));
+    var chart = new google.visualization.ColumnChart(document.getElementById('grafico'));
     chart.draw(data,
        {height: '500', width: '100%',});
     
