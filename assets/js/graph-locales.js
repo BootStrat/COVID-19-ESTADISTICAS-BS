@@ -9,6 +9,12 @@ google.setOnLoadCallback(Grafico1);
     'https://docs.google.com/spreadsheets/d/1FTpvXn3dlcld5e_XUPfpWhrmm86uE3ziwRkriIt-aMY/edit#gid=0');
     query.send(handleSampleDataQueryResponse);
   }
+  var options = {
+    width: '100%',
+    height: 800,
+    legend: { position: "bottom", },
+    colors: ['#819FE2', '#EA846A', '#FEC062', '#6CBF70', '#C061C2']
+  };
 
   function handleSampleDataQueryResponse(response) {
     if (response.isError()) {
@@ -18,8 +24,7 @@ google.setOnLoadCallback(Grafico1);
 
     var data = response.getDataTable();
     var chart = new google.visualization.ColumnChart(document.getElementById('grafico'));
-    chart.draw(data,
-       {height: '500', width: '100%',});
+    chart.draw(data, options)
     
   }
 
