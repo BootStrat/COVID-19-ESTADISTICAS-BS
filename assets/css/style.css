@@ -12,6 +12,9 @@
     margin: 0 auto;
     overflow: hidden;
   }
+  .navbar-brand {
+    margin: auto;
+  }
   /* Change color on hover */
   .topnav a:hover {
     background-color: #ddd;
@@ -30,7 +33,7 @@
   .container-graph {
    max-width: 70%;
    margin: auto;
-   padding-top: 110px;
+   padding-top: 1%;
    padding-bottom: 80px;
   }
   .text-principal {
@@ -42,4 +45,18 @@
   }
   .lince {
     text-align: center;
+  }
+  .politicas {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+  .terminos {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    width: 70%;
+    margin: auto;
   }
