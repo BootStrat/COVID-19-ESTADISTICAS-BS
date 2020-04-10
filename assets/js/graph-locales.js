@@ -11,7 +11,7 @@ google.setOnLoadCallback(Grafico1);
   }
   var options = {
     width: '100%',
-    height: 800,
+    height: 500,
     legend: { position: "bottom", },
     colors: ['#819FE2', '#EA846A', '#FEC062', '#6CBF70', '#C061C2']
   };
