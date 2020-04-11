@@ -17,8 +17,9 @@ google.setOnLoadCallback(Grafico1);
     hAxis: {
       direction: '-1'
     },
-    colors: ['#819FE2', '#EA846A', '#FEC062', '#6CBF70', '#C061C2']
+    colors: ['#819FE2', '#FEC062' , '#EA846A', '#6CBF70', '#C061C2']
   };
+
 
   function handleSampleDataQueryResponse(response) {
     if (response.isError()) {
@@ -68,26 +69,26 @@ else if (window.attachEvent) {
 
     var formatter = new google.visualization.ColorFormat();
     // formatter.addRange(0, 0, 'white', 'orange');
-    formatter.addRange(0, null, 'black', '#819FE2');
-    formatter.format(data, 1); // Aplicado a primera columna
+    formatter.addRange(0, null, 'black', '#B9C9ED');
+    formatter.format(data, 1); // Aplicado a primera columna - Aislados
     
     var formatter2 = new google.visualization.ColorFormat();
     
-    formatter2.addRange(0, null, 'black', '#EA846A');
-    formatter2.format(data, 2); // Aplicado a segunda columna
+    formatter2.addRange(0, null, 'black', '#FEDCA9');
+    formatter2.format(data, 2); // Aplicado a segunda columna - Casos Sospechosos
 
     var formatter3 = new google.visualization.ColorFormat();
 
-    formatter3.addRange(0, null, 'black', '#FEC062');
-    formatter3.format(data, 3); // Aplicado a tercera columna
+    formatter3.addRange(0, null, 'black', '#F2BAAD');
+    formatter3.format(data, 3); // Aplicado a tercera columna - Casos confirmados
 
     var formatter4 = new google.visualization.ColorFormat();
-    formatter4.addRange(0, null, 'black', '#6CBF70');
-    formatter4.format(data, 4); // Aplicado a cuarta columna
+    formatter4.addRange(0, null, 'black', '#A9DAB0');
+    formatter4.format(data, 4); // Aplicado a cuarta columna - Casos recuperados
 
     var formatter5 = new google.visualization.ColorFormat();
-    formatter5.addRange(0, null, 'black', '#C061C2');
-    formatter5.format(data, 5); // Aplicado a quinta columna
+    formatter5.addRange(0, null, 'black', '#DCA7DD');
+    formatter5.format(data, 5); // Aplicado a quinta columna - Casos descartados
 
 
     chart.draw(data, {
