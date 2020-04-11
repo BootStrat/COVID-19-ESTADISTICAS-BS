@@ -9,10 +9,14 @@ google.setOnLoadCallback(Grafico1);
     'https://docs.google.com/spreadsheets/d/1FTpvXn3dlcld5e_XUPfpWhrmm86uE3ziwRkriIt-aMY/edit#gid=0');
     query.send(handleSampleDataQueryResponse);
   }
+
   var options = {
     width: '100%',
     height: 400,
     legend: { position: "bottom", },
+    hAxis: {
+      direction: '-1'
+    },
     colors: ['#819FE2', '#EA846A', '#FEC062', '#6CBF70', '#C061C2']
   };
 
@@ -27,7 +31,6 @@ google.setOnLoadCallback(Grafico1);
     chart.draw(data, options)
     
   }
-
 ///////// Graph Table - Chart 2
 
 google.charts.load('current', {packages: ['table']});
@@ -62,10 +65,37 @@ else if (window.attachEvent) {
 
     var data = response.getDataTable();
     var chart = new google.visualization.Table(document.getElementById('tabla'));
+
+    var formatter = new google.visualization.ColorFormat();
+    // formatter.addRange(0, 0, 'white', 'orange');
+    formatter.addRange(0, null, 'black', '#819FE2');
+    formatter.format(data, 1); // Aplicado a primera columna
+    
+    var formatter2 = new google.visualization.ColorFormat();
+    
+    formatter2.addRange(0, null, 'black', '#EA846A');
+    formatter2.format(data, 2); // Aplicado a segunda columna
+
+    var formatter3 = new google.visualization.ColorFormat();
+
+    formatter3.addRange(0, null, 'black', '#FEC062');
+    formatter3.format(data, 3); // Aplicado a tercera columna
+
+    var formatter4 = new google.visualization.ColorFormat();
+    formatter4.addRange(0, null, 'black', '#6CBF70');
+    formatter4.format(data, 4); // Aplicado a cuarta columna
+
+    var formatter5 = new google.visualization.ColorFormat();
+    formatter5.addRange(0, null, 'black', '#C061C2');
+    formatter5.format(data, 5); // Aplicado a quinta columna
+
+
     chart.draw(data, {
+        allowHtml: true,
         sortColumn: 0,
         sortAscending: false,
-        height: '400', width: '100%',});
+        height: '400',
+        width: '100%',});
 }
 
 ///// • Para poner varios gráficos en uno, tenes que enumerar las variables para que no se mezclen 
