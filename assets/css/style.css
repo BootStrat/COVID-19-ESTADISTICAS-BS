@@ -25,10 +25,10 @@
     background-color: #919191;
     font-family: Helvetica;
     color: #fff;
-    padding: 10px;
   }
   .footer-copyright,text-center,py-3 {
     background-color: #919191;
+    color: #fff;
   }
   .container-graph {
    max-width: 70%;
