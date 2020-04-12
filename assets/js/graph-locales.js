@@ -9,12 +9,17 @@ google.setOnLoadCallback(Grafico1);
     'https://docs.google.com/spreadsheets/d/1FTpvXn3dlcld5e_XUPfpWhrmm86uE3ziwRkriIt-aMY/edit#gid=0');
     query.send(handleSampleDataQueryResponse);
   }
+
   var options = {
     width: '100%',
-    height: 800,
+    height: 400,
     legend: { position: "bottom", },
-    colors: ['#819FE2', '#EA846A', '#FEC062', '#6CBF70', '#C061C2']
+    hAxis: {
+      direction: '-1'
+    },
+    colors: ['#819FE2', '#FEC062' , '#EA846A', '#6CBF70', '#C061C2']
   };
+
 
   function handleSampleDataQueryResponse(response) {
     if (response.isError()) {
@@ -27,7 +32,6 @@ google.setOnLoadCallback(Grafico1);
     chart.draw(data, options)
     
   }
-
 ///////// Graph Table - Chart 2
 
 google.charts.load('current', {packages: ['table']});
@@ -62,10 +66,37 @@ else if (window.attachEvent) {
 
     var data = response.getDataTable();
     var chart = new google.visualization.Table(document.getElementById('tabla'));
+
+    var formatter = new google.visualization.ColorFormat();
+    // formatter.addRange(0, 0, 'white', 'orange');
+    formatter.addRange(0, null, 'black', '#B9C9ED');
+    formatter.format(data, 1); // Aplicado a primera columna - Aislados
+    
+    var formatter2 = new google.visualization.ColorFormat();
+    
+    formatter2.addRange(0, null, 'black', '#FEDCA9');
+    formatter2.format(data, 2); // Aplicado a segunda columna - Casos Sospechosos
+
+    var formatter3 = new google.visualization.ColorFormat();
+
+    formatter3.addRange(0, null, 'black', '#F2BAAD');
+    formatter3.format(data, 3); // Aplicado a tercera columna - Casos confirmados
+
+    var formatter4 = new google.visualization.ColorFormat();
+    formatter4.addRange(0, null, 'black', '#A9DAB0');
+    formatter4.format(data, 4); // Aplicado a cuarta columna - Casos recuperados
+
+    var formatter5 = new google.visualization.ColorFormat();
+    formatter5.addRange(0, null, 'black', '#DCA7DD');
+    formatter5.format(data, 5); // Aplicado a quinta columna - Casos descartados
+
+
     chart.draw(data, {
+        allowHtml: true,
         sortColumn: 0,
         sortAscending: false,
-        height: '400', width: '100%',});
+        height: '400',
+        width: '100%',});
 }
 
 ///// • Para poner varios gráficos en uno, tenes que enumerar las variables para que no se mezclen 
@@ -77,6 +108,6 @@ else if (window.attachEvent) {
   
 
 
- ////  https://docs.google.com/spreadsheets/d/1LnBXoeEnuGyaNgxqbfx7McvNviiEl52vdXrClxDqH1A/edit#gid=0&range=A1:F9
+/////  https://docs.google.com/spreadsheets/d/1LnBXoeEnuGyaNgxqbfx7McvNviiEl52vdXrClxDqH1A/edit#gid=0&range=A1:F9
 ///// SELECT A1:F9
 
