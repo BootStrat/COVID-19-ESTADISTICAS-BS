@@ -4,16 +4,19 @@ google.load('visualization', '1.0', {'packages':['corechart']});
         
 google.setOnLoadCallback(Grafico1);
 
+
  function Grafico1() {
     var query = new google.visualization.Query(
     'https://docs.google.com/spreadsheets/d/1FTpvXn3dlcld5e_XUPfpWhrmm86uE3ziwRkriIt-aMY/edit#gid=0');
     query.send(handleSampleDataQueryResponse);
+    
   }
 
   var options = {
     width: '100%',
-    height: 400,
-    legend: { position: "bottom", },
+    height: '500',
+    isStacked: 'absolute',
+    legend: { position: "bottom", textStyle: {color: 'black',}, maxLines: 3, alignment: 'center' },
     hAxis: {
       direction: '-1'
     },
@@ -28,6 +31,7 @@ google.setOnLoadCallback(Grafico1);
     }
 
     var data = response.getDataTable();
+    
     var chart = new google.visualization.ColumnChart(document.getElementById('grafico'));
     chart.draw(data, options)
     
