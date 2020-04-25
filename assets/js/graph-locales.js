@@ -18,7 +18,7 @@ google.setOnLoadCallback(Grafico1);
     isStacked: 'absolute',
     legendpageIndex: 0,
 
-    legend: { position: "top", textStyle: {color: 'black',}, maxLines: 4, alignment: 'center' },
+    legend: { position: "bottom", textStyle: {color: 'black'}, maxLines: 3, alignment: 'center' },
     hAxis: {
       direction: '-1'
     },
