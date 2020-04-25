@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title> Datos COVID-19 | bootstrat</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/icon/fonts.css">
-  <!--Google Analytics-->
+        <title> Datos COVID-19 | bootstrat</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/icon/fonts.css">
+        <link rel="shortcut icon" type="image/icon" href="/assets/icon/favicon.ico"/>
 
-  <!--Google Chart-->
-  <script src="https://www.gstatic.com/charts/loader.js"></script>
-<div class="container-father">
+        <!--Google Analytics-->
+
+        <!--Cartel de coockie-->
+        <link rel="stylesheet" type="text/css" href="//wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="//wpcc.io/lib/1.0.2/cookieconsent.min.js"></script><script>window.addEventListener("load", function(){window.wpcc.init({"corners":"normal","colors":{"popup":{"background":"#f6f6f6","text":"#000000","border":"#555555"},"button":{"background":"#555555","text":"#ffffff"}},"position":"bottom-right","padding":"small","margin":"small","content":{"href":"http://www.datoscovid.online/politicas-de-privacidad.html","message":"Este sitio utiliza cookies para proporcionarle la mejor experiencia posible.","button":"OK","link":"Mostrar más"}})});</script>
+
+        <!--Google Chart-->
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
-<div class="lince" style="margin-bottom:0">
-  <br>
-  <br>
-  <img src="/assets/img/logo-datoscovid.svg" width="50%" height="80" alt="COVID-19 DATOS">
-  <br>
-  <br>
-  <br>
+  <div class="container-father"></div> 
+  <div class="lince" style="margin-bottom:0">
+        <br>
+        <br>
+        <img src="/assets/img/logo-datoscovid.svg" width="50%" height="80" alt="COVID-19 DATOS">
+        <br>
+        <br>
+        <br>
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -38,10 +43,17 @@
 <body>
   <article class="text-principal">
     <h1>Estadísticas del COVID-19</h1>
-    <br>
-    <p>Esta web se encarga de mostrar los datos recopilados por el gobierno del partido de Pergamino y arrojarlos en un gráfico que permite dar cuenta especifícamente el estado de los casos acerca del virus COVID-19. Estos datos aparecen clasificados por colores y los mostrados son de los últimos 7 días.</p>
-    <br>
-    <p>Recomendamos leer detenidamente la sección Terminos y Condiciones para saber más acerca de este proyecto y nuestra manera de trabajar.</p>
+  <br>
+     <p>
+      Esta web se encarga de mostrar los datos recopilados por el Municipio del Partido de Pergamino y arrojarlos en un gráfico que permite dar cuenta específicamente el estado de los casos acerca del virus COVID-19.
+      Los datos se encuentran expuestos en dos maneras, el primero es un gráfico de columnas, mostrando los últimos siete informes. El segundo, no menos importante, es una tabla con todos los datos obtenidos desde el primer informe*.</p>
+     <p>
+      Con estos gráficos interactivos podemos apreciar de manera específica cada situación deseada. Por ejemplo, podemos ver que día fue el que tuvimos un mayor de personas aisladas, al igual que con las otras situaciones. 
+     <p> 
+      <small><em>
+        *Algunos de los primeros informes no fueron publicados ya que actualizaban los datos cada 3 o 4 días. 
+      </em></small>
+  <br>
   </article>
   <div class="container-graph">
     <script src="/assets/js/graph-locales.js"></script>

@@ -20,7 +20,7 @@ google.setOnLoadCallback(Grafico1);
     hAxis: {
       direction: '-1'
     },
-    colors: ['#819FE2', '#FEC062' , '#EA846A', '#6CBF70', '#C061C2']
+    colors: ['#819FE2', '#FEC062' , '#EA846A', '#6CBF70', '#C061C2', '#D88282']
   };
 
 
@@ -93,7 +93,11 @@ else if (window.attachEvent) {
     var formatter5 = new google.visualization.ColorFormat();
     formatter5.addRange(0, null, 'black', '#DCA7DD');
     formatter5.format(data, 5); // Aplicado a quinta columna - Casos descartados
-
+    
+    var formatter6 = new google.visualization.ColorFormat();
+    formatter6.addRange(0, null, 'black', '#D88282');
+    formatter6.format(data, 6); // Aplicado a quinta columna - Fallecidos
+    
 
     chart.draw(data, {
         allowHtml: true,
