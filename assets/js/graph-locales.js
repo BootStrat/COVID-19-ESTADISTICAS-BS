@@ -38,6 +38,7 @@ google.setOnLoadCallback(Grafico1);
     chart.draw(data, options)
     
   }
+  
 ///////// Graph Table - Chart 2
 
 google.charts.load('current', {packages: ['table']});
