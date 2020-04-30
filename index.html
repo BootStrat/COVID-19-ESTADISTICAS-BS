@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/icon/fonts.css">
         <link rel="shortcut icon" type="image/icon" href="/assets/icon/favicon.ico"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <!--Google Analytics-->
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -31,11 +32,8 @@
 </head>
   <div class="container-father"></div> 
   <div class="lince">
-
         <a title="Datos COVID-19" href="/index.html"><img src="/assets/img/logo-datoscovid.svg" width="100%" height="150" alt="COVID-19 DATOS"></a>
-      
 </div>
-
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <a class="navbar-brand" href="#"> </a>
@@ -45,9 +43,8 @@
   </div>  
 </nav>
 
-
 <body>
-  <article class="text-principal">
+  <div class="text-principal">
     <h1>Estadísticas del COVID-19</h1>
   <br>
      <p>
@@ -59,16 +56,38 @@
       <small><em>
         *Algunos de los primeros informes no fueron publicados ya que actualizaban los datos cada 3 o 4 días. 
       </em></small>
-      
+      </p>
   <br>
   </article>
-  <div class="container-graph">
-    <script src="/assets/js/graph-locales.js"></script>
-      <div id="grafico"></div>
-        &nbsp;
-        &nbsp;
-      <div id="tabla"></div>
-  </div>
+  <!--Grafico-->
+      <div class="container-graph">
+        <script src="/assets/js/graph-locales.js"></script>
+          <div id="grafico"></div>
+            &nbsp;
+            <div class="container-fluid">
+              <div class="row text-left categoria">
+                    <div class="col-sm"><a><img src="/assets/img/rectangulo-aislados.png" width="30" height="15">
+                      </a>  Aislados</div>
+                    <div class="col-sm"> <a><img src="/assets/img/rectangulo-sospechosos.png" width="30" height="15">
+                    </a>  Casos sospechosos</div>
+                    <div class="col-sm"><a><img src="/assets/img/rectangulo-confirmados.png" width="30" height="15">
+                    </a>   Casos confirmados</div>
+              </div>
+              <div class="row text-left categoria">
+                  <div class="col-sm"><a><img src="/assets/img/rectangulo-recuperado.png" width="30" height="15">
+                  </a> Casos recuperados</div>
+                  <div class="col-sm"> <a><img src="/assets/img/rectangulo-descartados.png" width="30" height="15">
+                  </a> Casos descartados</div>
+                  <div class="col-sm"> <a><img src="/assets/img/rectangulo-fallecidos.png" width="30" height="15">
+                  </a>  Fallecidos</div>
+              </div>  
+            </div>
+            </div>
+             &nbsp; 
+          <div id="tabla"></div>
+        </div>
+        &nbsp; 
+        &nbsp; 
 </body>
 
 <!-- Footer -->

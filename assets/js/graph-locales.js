@@ -18,11 +18,11 @@ google.setOnLoadCallback(Grafico1);
     isStacked: 'absolute',
     legendpageIndex: 0,
 
-    legend: { position: "bottom", textStyle: {color: 'black'}, maxLines: 3, alignment: 'center' },
+    legend: { position: "none", textStyle: {color: 'black'}, maxLines: 3, alignment: 'center' },
     hAxis: {
       direction: '-1'
     },
-    colors: ['#819FE2', '#FEC062' , '#EA846A', '#6CBF70', '#C061C2', '#D88282']
+    colors: ['#819FE2', '#FEC062' , '#EA846A', '#6CBF70', '#C061C2', '#919191']
   };
 
 
@@ -98,7 +98,7 @@ else if (window.attachEvent) {
     formatter5.format(data, 5); // Aplicado a quinta columna - Casos descartados
     
     var formatter6 = new google.visualization.ColorFormat();
-    formatter6.addRange(0, null, 'black', '#D88282');
+    formatter6.addRange(0, null, 'black', '#919191');
     formatter6.format(data, 6); // Aplicado a quinta columna - Fallecidos
     
 
