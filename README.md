@@ -18,4 +18,3 @@ El objetivo de este proyecto es utilizar los datos proporcionados por el sitio w
 
 Para implementar los gráficos se creó una web con HTML, CSS, JS y la librería Bootstrap.
 
-![Imagen conceptual del proyecto](/assets/img/movil.gif "Concepto del proyecto")
