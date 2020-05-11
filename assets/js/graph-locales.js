@@ -116,7 +116,6 @@ else if (window.attachEvent) {
 /////     var query = new google.visualization.Query(
 /////           Chart 2
 /////     var query1 = new google.visualization.Query(
-  
 
 
 /////  https://docs.google.com/spreadsheets/d/1LnBXoeEnuGyaNgxqbfx7McvNviiEl52vdXrClxDqH1A/edit#gid=0&range=A1:F9
