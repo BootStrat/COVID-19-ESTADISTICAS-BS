@@ -29,7 +29,8 @@ Los gráficos de Charts Google son enlazados con las hojas de cálculo de Google
     'https://docs.google.com/spreadsheets/d/xxxxxxxxxxx/edit#gid=0&fvid=2142043989' + queryString);   ///// poner el url del sheets con los permisos en público
     query1.send(handleSampleDataQueryResponse1);  
   } 
-  ``` 
+
+``` 
 
 
 
