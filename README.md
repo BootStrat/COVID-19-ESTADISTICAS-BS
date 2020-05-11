@@ -23,18 +23,12 @@ Para implementar los gráficos se creó una web con HTML, CSS, JS y la librería
 
 Los gráficos de Charts Google son enlazados con las hojas de cálculo de Google.
 
+Para ello se agrega ésta variable en el archivo JS,con el link de la hoja de cálculo.
 
 ``` 
   var query1 = new google.visualization.Query(
     'https://docs.google.com/spreadsheets/d/xxxxxxxxxxx/edit#gid=0&fvid=2142043989' + queryString);   ///// poner el url del sheets con los permisos en público
     query1.send(handleSampleDataQueryResponse1);  
   } 
-
 ``` 
-
-
-
-
-
-
-
+*README en desarrollo.*
