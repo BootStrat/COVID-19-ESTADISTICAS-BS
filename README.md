@@ -26,7 +26,7 @@ Los gráficos de Charts Google son enlazados con las hojas de cálculo de Google
 
 ``` 
   var query1 = new google.visualization.Query(
-    'https://docs.google.com/spreadsheets/d/15QTvrGXzmPcLJWqfk4SH_bE50vBOEg565-suDNjZRRA/edit#gid=0&fvid=2142043989' + queryString);   ///// poner el url del sheets con los permisos en público
+    'https://docs.google.com/spreadsheets/d/xxxxxxxxxxx/edit#gid=0&fvid=2142043989' + queryString);   ///// poner el url del sheets con los permisos en público
     query1.send(handleSampleDataQueryResponse1);  
   } 
   ``` 
